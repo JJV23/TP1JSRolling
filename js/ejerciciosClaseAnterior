@@ -1,0 +1,47 @@
+//Ejercicio 1: Variables y Operaciones Matemáticas
+//Crea dos variables, numero1 y numero2, y asígnales valores numéricos.
+//Luego, realiza las siguientes operaciones y muestra los resultados en la consola:
+let num1 = 10;
+let num2 = 20; 
+let resultado = null;
+
+//Suma de num1 y num2
+resultado = num1 + num2;
+console.log("El resultado de la suma es: "+resultado);
+
+//Resta de num1 y num2
+resultado = num1 - num2;
+console.log("El resultado de la suma es: "+resultado);
+
+//Multiplicación de num1 y num2
+resultado = num1 * num2;
+console.log("El resultado de la suma es: "+resultado);
+
+//División entre num1 y num2
+resultado = num1 / num2;
+console.log("El resultado de la suma es: "+resultado);
+
+// Ejercicio 2: Concatenación de Cadenas
+
+//Crea dos variables, nombre y apellido, y asígnales valores 
+//de tu elección. Luego, crea una tercera variable llamada 
+//nombreCompleto que contenga la concatenación de nombre y apellido. 
+//Muestra nombreCompleto en la consola.
+
+let nombre = "Jennifer ";
+let apellido = "Valor";
+
+let nombreCompleto = nombre + "" + apellido;
+console.log("El nombre completo es: "+ nombreCompleto);
+
+
+//Ejercicio 3: Conversión de Grados Celsius a Fahrenheit
+
+//Crea una variable llamada gradosCelsius y asígnale un valor en grados Celsius. 
+//Luego, utiliza la fórmula de conversión para calcular los grados Fahrenheit 
+//y almacénalos en una variable llamada gradosFahrenheit. Muestra ambos valores en la consola.
+
+let gradosCelsius = 40;
+let gradosFahrenheit = (1.8 * gradosCelsius) + 32;
+console.log("El resultado de la suma es: "+gradosFahrenheit+" grados Fahrenheit.");
+

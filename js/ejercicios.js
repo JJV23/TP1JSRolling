@@ -53,8 +53,6 @@ const frase = prompt("ingresa una frase:");
 let vocalesEncontradas = "";
 for (let i = 0; i < frase.length; i++) {
   const caracter = frase.charAt(i).toLowerCase(); 
-
- 
   if (caracter === 'a' || caracter === 'e' || caracter === 'i' || caracter === 'o' || caracter === 'u') {
     if (!vocalesEncontradas.includes(caracter)) {
       vocalesEncontradas += caracter;
