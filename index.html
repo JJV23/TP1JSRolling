@@ -1,14 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <script src="./js/ejerciciosClaseAnterior">
-        
+  </head>
+  <body>
+    <script src="./js/ejerciciosBucles.js">
+    //5- Realizar una página con un script que calcule el valor de la letra de un número de DNI (Documento nacional de identidad).    
+      while (true) {
+        const dni = prompt(
+          "Ingrese su número de DNI (o haga clic en 'Cancelar' para finalizar):"
+        );
 
+        if (dni === null) {
+          break; // El usuario pulsó "cancelar," salimos del bucle.
+        }
+
+        const numero = parseInt(dni);
+
+        if (!isNaN(numero) && numero >= 0 && numero <= 99999999) {
+          const letrasDNI = "TRWAGMYFPDXBNJZSQVHLCKE";
+          const indiceLetra = numero % 23;
+          const letra = letrasDNI.charAt(indiceLetra);
+
+          alert("La letra de su DNI " + dni + " es: " + letra);
+        } else {
+          alert("Por favor, ingrese un número de DNI válido.");
+        }
+      }
     </script>
-</body>
+  </body>
 </html>
